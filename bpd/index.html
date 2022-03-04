@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--index.html for BPD by yshe735-->
+<head>
+    <meta charset="UTF-8">
+    <title>BPD | Book Program Discussion </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header custom-background-color">
+        <div class="logoAndName">
+            <!--Image reference for whitelogo.png: https://image.flaticon.com/icons/png/512/566/566944.png (original edit)-->
+            <a href="#"><img src="whitelogo.png" id="bpd-logo" /></a>
+            <a href="#"><img src="heck.png" id="bpd-title" /></a>
+        </div>
+        <div class="top-buttons">
+            <a class="join-btn join-btn-frame join-btn-animation" id="trigger-modal">Join Now</a>
+            <a class="join-btn join-btn-frame join-btn-animation" id="LoginButton">Login</a>
+        </div>
+    </div>
+
+    <div class="nav-bar">
+        <a class="custom-color active" href="#">Home</a>
+        <a class="custom-color" href="#">About Us</a>
+        <a class="custom-color" href="#">Catalogue</a>
+        <a class="custom-color" href="#">News</a>
+        <a class="custom-color" href="#">Members</a>
+    </div>
+    <div class="main">
+        <div class="content-container">
+            <!--Image reference:  https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260 -->
+            <img src="pexels-jaymantri-4827.jpg">
+            <h1 class="custom-color">Welcome.</h1>
+            <div class="quote">
+                <h2 class="custom-color">We love books. And talking.</h2>
+            </div>
+            <a id="trigger-modal2" class="join-btn join-btn-frame join-btn-animation">Join Now</a>
+        </div>
+        <div class="weekly-words">
+            <h1>Weekly words from <i>Agatha Christie:</i></h1>
+            <p class="custom-color">"That's the secret of existence. We're all a little mad!"</p>
+        </div>
+        <div class="author-corner">
+            <!--Image reference: https://static.wikia.nocookie.net/literature/images/e/e0/ArgentineMagAgathaChristie.jpg/revision/latest/scale-to-width-down/200?cb=20180902114011 -->
+            <img src="agathachristie.png">
+        </div>
+        <div class="featured-books">
+            <h1 class="custom-color">Featured Books:</h1>
+            <div class="book-covers">
+                <div class="agatha">
+                    <!--Image reference: https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781949846386/the-great-gatsby-large-print-9781949846386_hr.jpg -->
+                    <img src="book01.png" alt="Agatha Christie - The Mysterious Affair at Styles">
+                </div>
+                <div class="gatsby">
+                    <!--Image reference: https://images-na.ssl-images-amazon.com/images/I/918TvCMQO4L.jpg -->
+                    <img src="book02.png" alt="F. Scott Fitzgerald - The Great Gatsby">
+                </div>
+                <div class="siddhartha">
+                    <!--Image reference: https://images-na.ssl-images-amazon.com/images/I/918TvCMQO4L.jpg -->
+                    <img src="book03.png" alt="Hermann Hesse - Siddhartha">
+                </div>
+            </div>
+            <a class="join-btn join-btn-frame join-btn-animation" id="view-in-cat-btn">View in catalogue</a>
+        </div>
+        <div class="member-highlights">
+            <h1>Our Member Highlights:</h1>
+            <div class="slide-show">
+                <div class="slide">
+                    <!--Image reference for member01.jpg: https://unsplash.com/photos/AJO_U1O-CcE -->
+                    <!--Image reference for member02.jpg: https://unsplash.com/photos/rBYYsIQcPBE -->
+                    <!--Image reference for member03.jpg: https://unsplash.com/photos/OORxv47rYqQ -->
+                    <img src="member01.jpg" alt="Member 01 reading" class="slider-img">
+                </div>
+
+                <img src="left-arrow.png" class="nav-btn" id="prev" onclick="prev()">
+                <img src="right-arrow.png" class="nav-btn" id="next" onclick="next()">
+            </div>
+            <!--Image reference for film-border.jpg: https://image.flaticon.com/icons/png/512/895/895975.png (original edit)-->
+            <img src="film-border.png" class="border" id="left-border">
+            <img src="film-border.png" class="border" id="right-border">
+        </div>
+        <div class="footer custom-background-color">
+            <p>Copyright 2021. Made by Yuwei. Images are referenced in source code.</p>
+        </div>
+    </div>
+
+    <!--Modal Section-->
+    <div id="bookclubrego">
+        <div class="modal-content">
+            <!--Image reference for greenlogo.png: https://image.flaticon.com/icons/png/512/566/566944.png (original edit)-->
+            <img src="greenlogo.png" alt="">
+            <h1>Registration for new BPD Group</h1>
+            <p><span id="required-field">*</span> indicates required field</p>
+            <form action="">
+                <div id="userDetails">
+                    <h2>User Details</h2>
+                    <label for="given-name">Given name<span id="required-field">*</span>
+                        <input type="text" placeholder="John" required>
+                    </label>
+                    <label for="surname">Surname<span id="required-field">*</span>
+                        <input type="text" placeholder="Smith" required>
+                    </label>
+                    <label for="Username">Username<span id="required-field">*</span>
+                        <input type="text" placeholder="e.g. johnsmith123" required>
+                    </label>
+                    <label for="Password">Password<span id="required-field">*</span>
+                        <input type="password" required>
+                    </label>
+                </div>
+                <div id="addresses">
+                    <h2>Addresses</h2>
+                    <div class="addresses">
+                        <label for="home-address"><span>Home Address<span id="required-field">*</span></span>
+                            <input type="text" placeholder="e.g. 1 ABC Street, City, Country, Postcode" required>
+                        </label>
+                        <label for="work address" id="work-address"><span>Work Address</span>
+                            <input type="text" placeholder="e.g. 1 ABC Street, City, Country, Postcode">
+                        </label>
+                    </div>
+                </div>
+                <div id="contacts">
+                    <h2>Contact Details</h2>
+                    <label for="mobile-number"><span>Mobile Number</span>
+                        <input type="text" placeholder="e.g. 64123456789" required>
+                    </label>
+                    <label for="email"><span>Email<span id="required-field">*</span></span>
+                        <input type="text" placeholder="js@example.com" required>
+                    </label>
+                    <a class="join-btn join-btn-frame join-btn-animation" id="form-join-btn">Submit</a>
+                </div>
+            </form>
+            <div class="close-icon">+</div>
+        </div>
+    </div>
+    <!--Modal submission confirmation-->
+    <div class="form-confirmation">
+        <div class="confirmation-content">
+            <!--Image reference for greenlogo.png: https://image.flaticon.com/icons/png/512/566/566944.png (original edit)-->
+            <img src="greenlogo.png" alt="">
+            <h1>Registration for new BPD Group</h1>
+            <h2>Thank you for submitting. We will get back to you soon.</h2>
+            <div class="close-icon" id="close-btn">+</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

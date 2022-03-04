@@ -1,0 +1,695 @@
+/*style.css for BPD by yshe735*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.custom-color{
+    color: #1f3a3d;
+}
+
+.custom-background-color{
+    background-color: #1f3a3d;
+}
+
+.header {
+    position: fixed;
+    color: white;
+    width: 100%;
+    height: 13%;
+    min-height: 100px;
+    min-width: 500px;
+    overflow: hidden;
+}
+
+body {
+    min-width: 600px;
+}
+
+.logoAndName {
+    position: fixed;
+    display:inline-block;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+#bpd-logo{
+    float: left;
+    width: 70px;
+    padding-right: 5px;
+    height: auto;
+    top: 2%;
+    bottom: 2%;
+}
+
+#bpd-title{
+    width: 250px;
+    height: auto;
+    top: 2%;
+    bottom: 2%;
+}
+
+.top-buttons {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    left: 50%;
+}
+
+.top-buttons a {
+    padding: 0.35em 0.35em;
+    border: 0.05em solid #FFFFFF;
+    margin: 0.2em 0.2em;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    font-family: 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: larger;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.top-buttons a:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+#trigger-modal {
+    position: absolute;
+    width: 10em;
+    right: 240px;
+    top: 20px;
+    cursor: pointer;
+    color: #142527;
+    font-family: Optima, 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#LoginButton {
+    position: absolute;
+    width: 10em;
+    right: 10px;
+    top: 20px;
+    color: #142527;
+    font-family: Optima, 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    background-color: #d8dbe2;
+    top: 100px;
+    overflow: auto;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    width: 20%;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    font-size: 120%;
+    font-family: 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-bar a:hover {
+    background-color: #ffffff;
+    color: #1f3a3d;
+    border-bottom: 3px solid #8fc93a;
+}
+
+.active {
+    background-color: #ECEFF8;
+    color: #1f3a3d;
+    border-bottom: 3px solid #8fc93a;
+}
+
+.main {
+    position: fixed;
+    top: 150px;
+    width: 100%;
+    height: calc(100% - 150px);
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+
+.content-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.content-container h1 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Optima, 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 80px;
+}
+
+.content-container img {
+    width: 100%;
+    height: 80vh;
+    object-position: 20% 10%;
+}
+
+.quote h2 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    border-right: 3px solid black;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Courier New', Courier, monospace;
+    animation: typist 15s steps(27) infinite, caret 1.5s infinite step-end;
+}
+
+@keyframes caret {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
+@keyframes typist {
+    0% {
+        width: 0ch
+    }
+    30% {
+        width: 27ch;
+    }
+    80% {
+        width: 27ch;
+    }
+    100% {
+        width: 0ch;
+    }
+}
+
+.join-btn, .join-btn:visited {
+    position: absolute;
+    display: inline-block;
+    top: 35%;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 20px 40px;
+    border-radius: 100px;
+    font-family: Optima, 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.join-btn-frame {
+    background: #fff;
+    color: #142527;
+}
+
+.join-btn:hover {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.join-btn::after {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    border-radius: 100px;
+    display: inline-block;
+    z-index: -1;
+    content: "";
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+.join-btn-frame::after {
+    background: white;
+}
+
+.join-btn-animation:hover::after {
+    transform: scaleX(1.6) scaleY(1.6);
+    opacity: 0;
+}
+
+.author-corner {
+    position: absolute;
+    top: 65%;
+    left: 15%;
+}
+
+.author-corner img {
+    width: 15%;
+    height: 15%;
+}
+
+.weekly-words {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.weekly-words h1 {
+    position: relative;
+    padding-left: 30%;
+    font-size: 24px;
+    color: white;
+    font-family: 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    font-weight: 300;
+}
+
+.weekly-words p {
+    position: relative;
+    padding-left: 30%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: -50%;
+    font-size: 24px;
+    background-color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:normal;
+}
+
+.ww-quote h4 {
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    color: white;
+    font-family: 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.featured-books {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-color: #ffffff;
+    padding: 5px, 2px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.featured-books h1 {
+    position: absolute;
+    top:75px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2.5%;
+    font-family: Optima, 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+}
+
+.book-covers {
+    position: relative;
+    width: 100%;
+    height:auto;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.agatha{ 
+    padding-left: 4%;
+    padding-right: 2%;
+}
+
+.agatha img{
+    float: left;
+    max-width: 33%;
+    height: auto;
+}
+
+#view-in-cat-btn{
+    max-width: 200px;
+    font-size: 20px;
+    padding: 5px, 10px;
+    top:550px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    /*this is background color customm but could not reference because it is in button*/
+    background-color: #1F3A3D;
+    color: white;
+}
+
+.gatsby{
+    padding-left: 4%;
+    padding-right: 2%;
+}
+
+.gatsby img{
+    float: left;
+    max-width: 33%;
+    height: auto;
+}
+
+.siddhartha{
+    padding-left: 4%;
+    padding-right: 2%;
+}
+
+.siddhartha img{
+    float: left;
+    max-width: 33%;
+    height: auto;
+}
+
+.member-highlights{
+    position: relative;
+    background-color: #6B2737;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content:center;
+}
+
+.member-highlights h1{
+    position: absolute;
+    top:40px;
+    color: white;
+    font-family: Optima,'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.slide-show{
+    position: relative;
+    top: 130px;
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    height: 690px;
+    background-color: #6B2737;
+}
+
+.nav-btn{
+    width:50px;
+    height: 50px;
+    cursor: pointer
+}
+
+#left-border{
+    position: absolute;
+    left: 4%;
+    top: 0;
+    width: 50px;
+    height: 820px;
+}
+
+#right-border{
+    position: absolute;
+    right: 4%;
+    bottom: 0;
+    width: 50px;
+    height: 820px;
+}
+
+#prev{
+    position: absolute;
+    top: 200px;
+    left: 10%;
+}
+
+.nav-btn:hover{
+    transform: scale(1.5) perspective(1px)
+}
+
+#next{
+    position: absolute;
+    top: 200px;
+    right: 10%;
+}
+
+.slide {
+    position:absolute;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #6B2737;
+}
+
+.slide img{
+    width: 60%;
+    padding: 0 20%;
+    height: 60%;
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 13%;
+}
+
+.footer p{
+    position: absolute;
+    font-family: Optima,'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: white;
+    top: 30px;
+    left: 15px;
+    
+}
+
+#bookclubrego {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    overflow: scroll;
+}
+
+.modal-content{
+    width: 60%;
+    height: 90%;
+    overflow: scroll;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-icon{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.modal-content img{
+    position: absolute;
+    top: 10px;
+}
+
+.modal-content h1{
+    position: absolute;
+    top: 60px;
+    padding: 1ch 0;
+    font-family: 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2.5ch;
+}
+
+.modal-content p{
+    position: absolute;
+    top: 100px;
+    padding: 1ch 0;
+    font-family: 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5ch;
+}
+
+form {
+    width: 700px;
+    height: 100%;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 2.5%;
+}
+
+input{
+    width: 80%;
+    height: 30px;
+    padding: 3px;
+}
+
+#required-field{
+    color: red;
+}
+
+form label,input{
+    display: block;
+}
+
+form input{
+    margin-top: 3px;
+    font-size: 17px;
+}
+
+#userDetails{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 400px;
+    text-align: left;
+}
+
+#userDetails h2{
+    padding: 2.5% 0 0 0;
+}
+
+#userDetails label{
+    padding: 2.5% 0 0 0;
+}
+
+#addresses{
+    position: absolute;
+    top: 470px;
+    width: 100%;
+    height: 200px;
+}
+
+#addresses label{
+    position:relative;
+    width: 100%;
+    text-align: left;
+}
+
+#addresses h2{
+    padding: 2.5% 0 0 0;
+}
+
+#addresses label{
+    padding: 2.5% 0 0 0;
+}
+
+#work-address{
+    padding-top: 1ch;
+}
+
+#contacts{
+    position: relative;
+    top: 670px;
+    width: 100%;
+    height: 275px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+#contacts h2{
+    padding: 2.5% 0 0 0;
+}
+
+#contacts label{
+    padding: 2.5% 0 0 0;
+}
+
+#form-join-btn{
+    background-color: #1f3a3d;
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 10px 40px;
+    text-align: center;
+}
+
+form h2{
+    font-family: 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    color:#1f3a3d;
+    font-size: 100%;
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 1ch;
+}
+
+
+
+.form-confirmation{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    overflow: scroll;
+}
+
+.confirmation-content{
+    width: 40%;
+    height: 20%;
+    overflow: scroll;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation-content img{
+    position: absolute;
+    top: 15%;
+}
+
+.confirmation-content h1{
+    position: absolute;
+    top: 45%;
+    padding: 1ch 0;
+    font-family: 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2.5ch;
+}
+
+.confirmation-content h2{
+    position: absolute;
+    top: 60%;
+    padding: 2ch 2ch;
+    font-family: 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2ch;
+}
+
